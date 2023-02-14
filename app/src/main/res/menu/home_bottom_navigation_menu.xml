@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myHomeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_nav_home"/>
+    <item
+        android:id="@+id/myHealthFragment"
+        android:title="Health"
+        android:icon="@drawable/ic_nav_health"/>
+    <item
+        android:id="@+id/myLifestyleFragment"
+        android:title="Lifestyle"
+        android:icon="@drawable/ic_nav_lifestyle"/>
+
+    <item
+        android:id="@+id/myTreatmentsFragment"
+        android:title="Treatments"
+        android:icon="@drawable/ic_nav_treatments"/>
+
+    <item
+        android:id="@+id/myNetworkFragment"
+        android:title="Network"
+        android:icon="@drawable/ic_nav_network"/>
+</menu>

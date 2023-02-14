@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimg"
+
+    tools:context=".homeFragments.FinalProfile">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_back_arrow"/>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       android:layout_marginTop="10dp">
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/img1"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           app:cardCornerRadius="500dp"
+           android:layout_marginStart="10dp">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:contentDescription="Image"
+               android:src="@drawable/girl"
+               android:scaleType="centerCrop"/>
+
+       </androidx.cardview.widget.CardView>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/img1"
+    android:layout_marginStart="10dp"
+    android:layout_centerVertical="true">
+
+
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hi Gunjan Sharma!"
+               android:textColor="@color/black"
+
+               android:textStyle="bold"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/username"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="UserId"
+               android:textStyle="bold"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="12586925"
+               android:layout_marginStart="5dp"
+               android:textStyle="bold"/>
+       </LinearLayout>
+
+
+</RelativeLayout>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:contentDescription="Image"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="10dp"
+           android:src="@drawable/bell"/>
+   </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center">
+<!--        <SearchView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:queryHint="Search Here"-->
+<!--            android:background="#E7F1FE" />-->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:queryHint="Search Here"
+            android:iconifiedByDefault="false"
+            android:background="#E7F1FE"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/relative_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgblood"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/bloodgroup"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:layout_toRightOf="@id/imgblood"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/SpinnerDatingLevelOfEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/bloodgroup"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/relative_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/weight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/weightimg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_toRightOf="@id/weight"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/weightInKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/weight"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/relative_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/height"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/heightimg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:layout_toRightOf="@id/height"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/heightInKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/relative_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/waist"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/waist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waist"
+            android:layout_toRightOf="@id/waist"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/waistinCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/relative_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/hip"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/hupimg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hip"
+            android:layout_toRightOf="@id/hip"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/hipinCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/bp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/restingbpimg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resting BP"
+                    android:layout_toRightOf="@id/bp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/bpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/heartrate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/heartrateimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/heartrate">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heart Rate"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beats/min"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/heartin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/pulserate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/pulseimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/pulserate">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pulse Rate"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beats/min"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/pulsein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/respirationrate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/respirationimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/respirationrate">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Respiration Rate"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breaths/min"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/respirationin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/tg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/tgimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TG"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mg/Dl"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/tgin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/hdl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/hdlimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/hdl">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HDL"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mg/Dl"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/hdlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="1dp"
+                    android:entries="@array/bp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+                android:elevation="4dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/ldl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/ldlimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ldl">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LDL"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mg/Dl"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/ldlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/fbs"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/fbsimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fbs">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FBS"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mg/Dl"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/fbsin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/ppbs"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/ppbsimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ppbs">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PPBS"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mg/Dl"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/ppbsin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/relative_bg"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/hb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/hbimg"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/hb">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HbA1C"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:layout_toRightOf="@id/heartrate"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/hbin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/hbb"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

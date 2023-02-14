@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".homeFragments.SignUpFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:id="@+id/mainrll1"
+            android:layout_width="327dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:background="@drawable/bgdesign"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/email11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/usermain"
+                app:tint="#A1A8B0" />
+            <EditText
+                android:id="@+id/gmail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your Name"
+                android:layout_toRightOf="@id/email11"
+                android:inputType="textEmailAddress"
+
+                android:layout_centerVertical="true"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mainrll"
+            android:layout_width="327dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mainrll1"
+            android:elevation="1dp"
+            android:background="@drawable/bgdesign"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/email1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/email"
+                app:tint="#A1A8B0" />
+            <EditText
+                android:id="@+id/gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your Email"
+                android:layout_toRightOf="@id/email1"
+                android:inputType="textEmailAddress"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/mainsrll"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/mainrll"
+            android:background="@drawable/bgdesign"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/locks"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lock"
+                android:layout_marginStart="15dp"
+                app:tint="#A1A8B0" />
+
+            <EditText
+                android:id="@+id/emial_in_registers"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:hint="Enter your password"
+                android:inputType="textEmailAddress"
+                android:layout_toRightOf="@id/locks"
+                android:singleLine="true"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/eyes"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/emial_in_registers"
+                android:src="@drawable/eye" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mainsrll"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/cb_terms"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/grey"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/readTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:text="I agree to the health passport Terms of Service\nand Privacy Policy "
+                android:maxLines="2"
+                android:minLines="2"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/questionIndustry_ContinueBtn"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonbg"
+        android:text="Signup "
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you have an account"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/txt4"
+            android:textColor="#0956DE"
+            android:layout_marginStart="5dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

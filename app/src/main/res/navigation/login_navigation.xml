@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logii_navogation"
+    app:startDestination="@id/startAppFragment">
+
+    <fragment
+        android:id="@+id/startAppFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.StartAppFragment"
+        android:label="fragment_start_app"
+        tools:layout="@layout/fragment_start_app" >
+        <action
+            android:id="@+id/action_startAppFragment_to_loginSignUpFragment"
+            app:destination="@id/loginSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSignUpFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.LoginSignUpFragment"
+        android:label="fragment_login_sign_up"
+        tools:layout="@layout/fragment_login_sign_up" >
+        <action
+            android:id="@+id/action_loginSignUpFragment_to_loginfragment"
+            app:destination="@id/loginfragment" />
+        <action
+            android:id="@+id/action_loginSignUpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginfragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.Loginfragment"
+        android:label="fragment_loginfragment"
+        tools:layout="@layout/fragment_loginfragment" >
+
+        <action
+            android:id="@+id/action_loginfragment_to_forgotByphone"
+            app:destination="@id/forgotByphone" />
+        <action
+            android:id="@+id/action_loginfragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.SignUpFragment"
+        android:label="SignUpFragment" />
+    <fragment
+        android:id="@+id/verificationCode"
+        android:name="com.example.healthpassportkotlin.homeFragments.VerificationCode"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code" >
+        <action
+            android:id="@+id/action_verificationCode_to_createNewPassword"
+            app:destination="@id/createNewPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotByphone"
+        android:name="com.example.healthpassportkotlin.homeFragments.ForgotByphone"
+        android:label="ForgotByphone" >
+        <action
+            android:id="@+id/action_forgotByphone_to_verificationCode"
+            app:destination="@id/verificationCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.WelcomeFragment"
+        android:label="WelcomeFragment" />
+    <fragment
+        android:id="@+id/createNewPassword"
+        android:name="com.example.healthpassportkotlin.homeFragments.CreateNewPassword"
+        android:label="CreateNewPassword" />
+</navigation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appColor"
+    android:layout_height="match_parent"
+    tools:context=".homeFragments.StartAppFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/header_title"
+        android:layout_height="@dimen/dp_450">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:srcCompat="@drawable/blur"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.SelectedCornerRadius" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/space150" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ledy_doc"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/dp_300" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/striving_to_improve"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/dp_16"
+        android:layout_gravity="center"
+        android:id="@+id/improve"
+        android:textColor="@color/white"
+        android:layout_below="@id/header_title"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/community_health_care_n_and_practices"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/improve"
+        android:textSize="@dimen/dp_16"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/light_white"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_bg"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

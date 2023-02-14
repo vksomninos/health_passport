@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ForgotByphone">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back_arrow"/>
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Your Password?"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your email or your phone number,\nwe will send you confirmation code"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+
+        android:elevation="1dp"
+        android:background="@drawable/bgdesign"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            android:text="Email"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="phone"
+            android:textColor="#0956DE"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:elevation="1dp"
+        android:background="@drawable/bgdesign"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/email1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+
+            android:src="@drawable/email"/>
+        <EditText
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:hint="085281882151"
+            android:layout_toRightOf="@id/email1"
+            android:layout_centerVertical="true"
+            android:inputType="phone"
+            android:textStyle="normal"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/questionIndustry_ContinueBtn"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonbg"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

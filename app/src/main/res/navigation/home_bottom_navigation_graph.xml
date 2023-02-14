@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bottom_navigation_graph"
+    app:startDestination="@id/myHomeFragment">
+
+    <fragment
+        android:id="@+id/myHomeFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.MyHomeFragment"
+        android:label="fragment_my_home"
+        tools:layout="@layout/fragment_my_home" />
+    <fragment
+        android:id="@+id/myHealthFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.MyHealthFragment"
+        android:label="fragment_my_health"
+        tools:layout="@layout/fragment_my_health" >
+        <action
+            android:id="@+id/action_myHealthFragment_to_final_profile"
+            app:destination="@id/final_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/myLifestyleFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.MyLifestyleFragment"
+        android:label="fragment_my_lifestyle"
+        tools:layout="@layout/fragment_my_lifestyle" />
+    <fragment
+        android:id="@+id/myTreatmentsFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.MyTreatmentsFragment"
+        android:label="fragment_my_treatments"
+        tools:layout="@layout/fragment_my_treatments" />
+    <fragment
+        android:id="@+id/myNetworkFragment"
+        android:name="com.example.healthpassportkotlin.homeFragments.MyNetworkFragment"
+        android:label="fragment_my_network"
+        tools:layout="@layout/fragment_my_network" />
+    <fragment
+        android:id="@+id/final_profile"
+        android:name="com.example.healthpassportkotlin.homeFragments.FinalProfile"
+        android:label="final_profile" />
+</navigation>

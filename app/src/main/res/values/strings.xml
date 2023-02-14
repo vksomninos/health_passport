@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">HealthPassportKotlin</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="striving_to_improve">Striving to improve</string>
+    <string name="community_health_care_n_and_practices">community health care \n and practices</string>
+    <string name="get_started">Get Started</string>
+    <string name="let_s_get_started">Let’s get started!</string>
+    <string name="login">Login to enjoy the features we’ve \n provided, and stay healthy!</string>
+    <string name="qw">Login</string>
+
+    <string-array name="bloodgroup">
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </string-array>
+
+
+    <string-array name="weight">
+        <item>20Kg</item>
+        <item>30Kg</item>
+        <item>35Kg</item>
+        <item>40Kg</item>
+        <item>45Kg</item>
+        <item>50Kg</item>
+        <item>55Kg</item>
+        <item>60Kg</item>
+        <item>65Kg</item>
+        <item>70Kg</item>
+        <item>80Kg</item>
+    </string-array>
+
+
+    <string-array name="height">
+        <item>60cm</item>
+        <item>70cm</item>
+        <item>80cm</item>
+        <item>90cm</item>
+        <item>100cm</item>
+        <item>110cm</item>
+        <item>120cm</item>
+        <item>130cm</item>
+        <item>140cm</item>
+        <item>150cm</item>
+        <item>160cm</item>
+    </string-array>
+    <string-array name="bp">
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>11</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>170</item>
+        <item>160+</item>
+
+    </string-array>
+
+    <string-array name="hbb">
+        <item>1%</item>
+        <item>2%</item>
+        <item>3%</item>
+        <item>4%</item>
+        <item>5%</item>
+        <item>6%</item>
+        <item>7%</item>
+    </string-array>
+
+
+</resources>
